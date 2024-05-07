@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Custom Greeter
+Comment=Custom LightDM Greeter
+Exec=python3 /install/custom_greeter.py
+Type=Application
