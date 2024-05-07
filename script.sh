@@ -15,7 +15,7 @@ echo ""
 echo ""
 echo ""
 sudo dphys-swapfile swapoff
-sudo sed -i -e 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=4096/g' /etc/dphys-swapfile
+sudo sed -i -e 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=2048/g' /etc/dphys-swapfile
 sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
 echo ""
