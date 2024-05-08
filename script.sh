@@ -5,6 +5,7 @@ sudo apt upgrade -y
 mkdir /install/
 cp ./* /install/
 chmod +x /install/custom-greeter.py
+
 echo ""
 echo ""
 echo ""
@@ -14,10 +15,12 @@ echo "(1/5)"
 echo ""
 echo ""
 echo ""
+
 sudo dphys-swapfile swapoff
 sudo sed -i -e 's/CONF_SWAPSIZE=100/CONF_SWAPSIZE=2048/g' /etc/dphys-swapfile
 sudo dphys-swapfile setup
 sudo dphys-swapfile swapon
+
 echo ""
 echo ""
 echo ""
@@ -27,6 +30,7 @@ echo "(2/5)"
 echo ""
 echo ""
 echo ""
+
 sudo apt install xserver-xorg --no-install-recommends --no-install-suggests -y
 sudo apt install xfce4 -y
 sudo apt install xfce4-terminal -y # Terminal
@@ -35,6 +39,7 @@ sudo apt install lightdm --no-install-recommends --no-install-suggests -y # Logi
 sudo apt install lightdm-gtk-greeter --no-install-recommends --no-install-suggests -y # Technically no req but good to lock
 sudo apt install python3 # Install Python
 sudo apt install liblightdm-gobject-dev # Python Dependency to run the custom greeter
+
 echo ""
 echo ""
 echo ""
