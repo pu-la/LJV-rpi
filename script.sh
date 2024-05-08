@@ -1,5 +1,4 @@
 #! /bin/bash
-exit 1
 sudo systemctl start ssh
 sudo apt update
 sudo apt upgrade -y
