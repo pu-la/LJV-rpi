@@ -1,11 +1,12 @@
 #! /bin/bash
 exit 1
+sudo systemctl start ssh
 sudo apt update
 sudo apt upgrade -y
 mkdir /install/
 cp ./* /install/
 chmod +x /install/custom-greeter.py
-
+chmod +x /install/boot.sh
 echo ""
 echo ""
 echo ""
