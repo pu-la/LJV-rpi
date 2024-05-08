@@ -39,6 +39,7 @@ sudo apt install neofetch -y # Sys stat util
 sudo apt install lightdm --no-install-recommends --no-install-suggests -y # Login Manager
 sudo apt install lightdm-gtk-greeter --no-install-recommends --no-install-suggests -y # Technically no req but good to lock
 sudo apt install python3 # Install Python
+sudo apt install python3-gi
 sudo apt install liblightdm-gobject-dev # Python Dependency to run the custom greeter
 
 echo ""
