@@ -35,7 +35,6 @@ sudo apt install lightdm --no-install-recommends --no-install-suggests -y # Logi
 sudo apt install lightdm-gtk-greeter --no-install-recommends --no-install-suggests -y # Technically no req but good to lock
 sudo apt install python3 # Install Python
 sudo apt install liblightdm-gobject-dev # Python Dependency to run the custom greeter
-sudo systemctl enable --now lightdm
 echo ""
 echo ""
 echo ""
@@ -48,3 +47,27 @@ echo ""
 
 sudo sed -i 's/#greeter-session=.*$/greeter-session=custom-greeter/' /etc/lightdm/lightdm.conf # Set to use custom greeter
 sudo cp ./custom-greeter.desktop /usr/share/xgreeters/
+sudo raspi-config nonint do_boot_behaviour B3
+
+
+echo ""
+echo ""
+echo ""
+echo ""
+echo "GUI Enabled"
+echo "(4/5)"
+echo ""
+echo ""
+echo ""
+
+sudo apt install vlc
+
+echo ""
+echo ""
+echo ""
+echo ""
+echo "Post Installation"
+echo "(5/5)"
+echo "reboot recommended"
+echo ""
+echo ""
